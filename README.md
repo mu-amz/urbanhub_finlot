@@ -1,16 +1,43 @@
-# demo_test
+# Finlot
 
-A new Flutter project.
+Finlot is a Flutter mobile app prototype for creating and managing shared savings pools. The current app demonstrates the splash screen, onboarding flow, and a sample home dashboard.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Branded splash screen with a gradient background.
+- Three onboarding slides introducing pool creation, tracking, and ease of use.
+- Home dashboard mockup with upcoming draw information, pool cards, contribution statistics, and bottom navigation.
+- Uses local image assets and the Outfit font through Google Fonts.
 
-A few resources to get you started if this is your first Flutter project:
+> The current home screen is a UI prototype. Pool data and actions are not connected to a backend.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Requirements
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter SDK with Dart 3.9.2 or later.
+
+## Getting started
+
+Fetch dependencies and run the app from the project root:
+
+```sh
+flutter pub get
+flutter run
+```
+
+To run the test suite:
+
+```sh
+flutter test
+```
+
+## Project structure
+
+```text
+lib/
+  main.dart       App entry point, splash screen, and onboarding flow
+  home.dart       Home dashboard UI
+assets/images/    Splash, onboarding, and dashboard artwork
+test/             Flutter widget tests
+```
+
+Image assets are declared in `pubspec.yaml` under `assets/images/`.
